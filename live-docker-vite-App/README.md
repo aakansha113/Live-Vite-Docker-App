@@ -34,6 +34,7 @@ Windows PowerShell:
 $docker run -it -p 5173:5173 -v ${PWD}:/app vite-live
 
 Linux/Mac:
+
 $docker run -it -p "$PWD":/app vite-live
 
 ## Open in Browser
