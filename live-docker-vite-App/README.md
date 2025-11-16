@@ -31,7 +31,7 @@ $docker build -t vite-live .
 ## Run Container (Live Reload)
 Windows PowerShell:
 
-$docker run -it -p 5173:5173 -v ${PWD}:/app vite-live
+$docker  run -d  -p  5173:5173  -v  ${PWD}:/app vite-live
 
 Linux/Mac:
 
