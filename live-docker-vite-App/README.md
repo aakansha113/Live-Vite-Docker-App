@@ -1,16 +1,45 @@
-# React + Vite
+## 🚀 Vite + React + Docker (Live Reload)
+A simple setup to run a Vite React application inside Docker with live reload, without Docker Compose or Nginx.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Project Structure
+project/
+├── Dockerfile
+├── .dockerignore
+├── vite.config.js
+├── package.json
+├── src/
+│   ├── App.jsx
+│   └── main.jsx
+└── README.md
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+$mkdir vite-docker-app
+$cd vite-docker-app
+$npm create vite@latest . -- --template react
+$npm install 
 
-## React Compiler
+## Verify the app runs locally
+# run dev server
+$npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Open the shown URL (usually http://localhost:5173) and confirm the app loads. Stop server with Ctrl+C.
 
-## Expanding the ESLint configuration
+## Build Image
+$docker build -t vite-live .
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run Container (Live Reload)
+Windows PowerShell:
+$docker run -it -p 5173:5173 -v ${PWD}:/app vite-live
+
+Linux/Mac:
+$docker run -it -p "$PWD":/app vite-live
+
+## Open in Browser
+http://localhost:5173
+
+## Check container logs:
+
+$docker logs <container_id>
+
+
