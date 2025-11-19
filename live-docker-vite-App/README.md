@@ -20,7 +20,7 @@ $npm create vite@latest . -- --template react
 $npm install 
 ```
 ## Verify the app runs locally
-# run dev server
+### run dev server
 ```
 $npm run dev
 ```
