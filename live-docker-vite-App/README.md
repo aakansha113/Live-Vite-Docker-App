@@ -43,7 +43,7 @@ $docker  run -it -p "$PWD":/app vite-live
 ### http://localhost:5173
 
 ## Check container logs:
-
+```
 $docker logs <container_id>
-
+```
 
