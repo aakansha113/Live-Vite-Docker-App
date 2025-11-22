@@ -13,6 +13,7 @@ project/
 │   ├── App.jsx
 │   └── main.jsx
 └── README.md
+
 ```
 mkdir vite-docker-app
 cd vite-docker-app
@@ -25,7 +26,12 @@ npm install
 npm run dev
 ```
 Open the shown URL (usually http://localhost:5173) and confirm the app loads. Stop server with Ctrl+C.
-
+##     OR
+### 📥 Clone This Repository
+To clone this portfolio on your local system, run:
+```
+git clone https://github.com/aakansha113/my-portfolio.git
+```
 ## Build Image
 ```
 docker build -t vite-live .
@@ -46,4 +52,5 @@ docker  run -it -p "$PWD":/app vite-live
 ```
 docker logs <container_id>
 ```
-
+### ⭐ Show Your Support
+#### If you like this portfolio, feel free to ⭐ star the repo!
