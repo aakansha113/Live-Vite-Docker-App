@@ -30,7 +30,7 @@ Open the shown URL (usually http://localhost:5173) and confirm the app loads. St
 ### 📥 Clone This Repository
 To clone this portfolio on your local system, run:
 ```
-git clone https://github.com/aakansha113/my-portfolio.git
+git clone https://github.com/aakansha113/Live-Vite-Docker-App.git
 ```
 ## Build Image
 ```
