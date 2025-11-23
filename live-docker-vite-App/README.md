@@ -16,8 +16,11 @@ project/
 
 ```
 mkdir vite-docker-app
+
 cd vite-docker-app
+
 npm create vite@latest . -- --template react
+
 npm install 
 ```
 ## Verify the app runs locally
