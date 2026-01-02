@@ -3,7 +3,8 @@ A simple setup to run a Vite React application inside Docker with live reload, w
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Project Structure
+##  📁 Project Structure
+```
 project/
 ├── Dockerfile
 ├── .dockerignore
